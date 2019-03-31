@@ -1,6 +1,7 @@
 <?php
-include 'db.php';
-include 'table.php';
+include 'helpers/db.php';
+include '../client/table.html';
+
 $tbl = mysqli_query($connection, "SELECT * FROM `Buyer`");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";

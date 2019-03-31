@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $event_name = $_POST['event_name'];
 $category = $_POST['category'];
@@ -70,14 +70,14 @@ if (mysqli_query($connection, $query1)) {
    echo "alert('Event created successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
     if (mysqli_query($connection, $query2)) {
 		echo "<script language='javascript'>";
         echo "alert('Artist added successfully')";
         echo"</script>";
         echo "<script  type='text/javascript'>";
-        echo "window.location = '../empl/event.php'";
+        echo "window.location = '../client/views/event.php'";
         echo"</script>";
 	}else
 	{ 
@@ -85,7 +85,7 @@ if (mysqli_query($connection, $query1)) {
         echo "alert('Artist didn`t added successfully!')";
         echo " </script>";
         echo "<script  type='text/javascript'>";
-        echo "window.location = '../empl/event.php'";
+        echo "window.location = '../client/views/event.php'";
         echo"</script>";
 	}
 }else
@@ -94,7 +94,7 @@ if (mysqli_query($connection, $query1)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
 } 
 ?>

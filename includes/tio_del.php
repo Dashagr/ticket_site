@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $id_del = $_GET['account_number'];
 
@@ -16,21 +16,21 @@ if (mysqli_query($connection, $query1)) {
            echo "alert('Orders # " . $id_del . " deleted successfully!')";
            echo"</script>";
            echo "<script  type='text/javascript'>";
-           echo "window.location = '../empl/tio.php'";
+           echo "window.location = '../client/views/tio.php'";
            echo"</script>";
         } else if (mysqli_query($connection, $query2)) {
            echo "<script language='javascript'>";
            echo "alert('Orders # " . $id_del . " didn`t deleted successfully!')";
            echo"</script>";
            echo "<script  type='text/javascript'>";
-           echo "window.location = '../empl/tio.php'";
+           echo "window.location = '../client/views/tio.php'";
            echo"</script>";
 }else { 
    echo "<script language='javascript'>";
    echo "alert('Fail!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/tio.php'";
+   echo "window.location = '../client/views/tio.php'";
    echo"</script>";
 } }
 ?>

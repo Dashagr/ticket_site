@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $id_del = $_GET['id_del'];
 
@@ -17,7 +17,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('buyer # " . $id_del . " deleted successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/buyer.php'";
+   echo "window.location = '../client/views/buyer.php'";
    echo"</script>";
 }else
 { 
@@ -25,7 +25,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/buyer.php'";
+   echo "window.location = '../client/views/buyer.php'";
    echo"</script>";
 } 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 session_start();
 $login = $_SESSION['login'];
@@ -25,7 +25,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert(' " . $cID . " edit delivery status # " . $id . "successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/del_c.php'";
+   echo "window.location = '../client/views/del_c.php'";
    echo"</script>";
 }else
 { 
@@ -33,7 +33,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/del_c.php'";
+   echo "window.location = '../client/views/del_c.php'";
    echo"</script>";
 } 
 

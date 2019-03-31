@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $artist_name = $_POST['artist_name'];
 $processing = $_POST['processing'];
@@ -27,15 +27,15 @@ if (mysqli_query($connection, $query)) {
    echo "alert(' Артист  ".$artist_name."  успішно доданий!')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/artist.php'";
+   echo "window.location = '../client/views/artist.php'";
    echo"</script>";
 }else
 { 
    echo "<script language='javascript'>";
-   echo "alert('Щось не так!')";
+   echo "alert('Щось не так з даними!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/artist.php'";
+   echo "window.location = '../client/views/artist.php'";
    echo"</script>";
 } 
 ?>

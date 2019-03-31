@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $ticket_code = $_POST['ticket_code'];
 $price = $_POST['price'];
@@ -33,7 +33,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Ticket added successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/ticket.php'";
+   echo "window.location = '../client/views/ticket.php'";
    echo"</script>";
 }else
 { 
@@ -41,7 +41,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Fail!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/ticket.php'";
+   echo "window.location = '../client/views/ticket.php'";
    echo"</script>";
 } 
 ?>

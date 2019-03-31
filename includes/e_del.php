@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $event_code = $_GET['event_code'];
 
@@ -17,7 +17,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Event # " . $event_code . "deleted successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
 }else
 { 
@@ -25,7 +25,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
 } 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 session_start();
 $login = $_SESSION['login'];
@@ -97,7 +97,7 @@ VALUES
         echo "alert('ok!')";
         echo"</script>";
          echo "<script  type='text/javascript'>";
-        echo "window.location = '../single-post.php'";
+        echo "window.location = '../client/views/report_courier.php'";
         echo"</script>";
         }
 	}else{ 
@@ -105,7 +105,7 @@ VALUES
         echo "alert('TIO didn`t added successfully!')";
         echo " </script>";
         echo "<script  type='text/javascript'>";
-        echo "window.location = '../single-post.php'";
+        echo "window.location = '../client/views/report_courier.php'";
         echo"</script>";
 	}
 }else
@@ -114,7 +114,7 @@ VALUES
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/new_order.php'";
+   echo "window.location = '../client/views/new_order.php'";
    echo"</script>";
 } 
 ?>

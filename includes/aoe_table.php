@@ -1,6 +1,7 @@
 <?php
-include 'db.php';
-include 'table.php';
+include 'helpers/db.php';
+include '../client/table.html';
+
 $tbl = mysqli_query($connection, "SELECT `Artist_On_Event`.`artist_name`, `Artist_On_Event`.`event_code`, `Event`.`event_name` FROM `Artist_On_Event` INNER JOIN `Event` ON `Event`.`event_code`=`Artist_On_Event`.`event_code` GROUP BY `Artist_On_Event`.`artist_name`, `Event`.`event_name`");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";

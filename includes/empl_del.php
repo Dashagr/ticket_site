@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $id_del = $_GET['id_del'];
 
@@ -10,7 +10,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Employee # " . $artist_name . " deleted successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/delivery.php'";
+   echo "window.location = '../client/views/delivery.php'";
    echo"</script>";
 }else
 { 
@@ -18,7 +18,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/delivery.php'";
+   echo "window.location = '../client/views/delivery.php'";
    echo"</script>";
 } 
 ?>

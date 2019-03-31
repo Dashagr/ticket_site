@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 session_start();
 $login = $_SESSION['login'];
@@ -30,7 +30,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('" . $eID . " змінив замовлення №  ".$id."  успішно!')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/tio.php'";
+   echo "window.location = '../client/views/tio.php'";
    echo"</script>";
 }else
 { 
@@ -38,7 +38,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Fail!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/tio.php'";
+   echo "window.location = '../client/views/tio.php'";
    echo"</script>";
 } 
 ?>

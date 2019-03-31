@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $artist_name = $_POST['artist_name'];
 $event_code = $_POST['event_code'];
@@ -19,7 +19,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('successfully! ')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 }else
 { 
@@ -27,7 +27,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 } 
 ?>

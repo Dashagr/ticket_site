@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $id = $_GET['id'];
 $new_val = $_GET['new_val'];
@@ -42,7 +42,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Courier # " . $id . "edited successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/corier.php'";
+   echo "window.location = '../client/views/corier.php'";
    echo"</script>";
 }else
 { 
@@ -50,7 +50,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/corier.php'";
+   echo "window.location = '../client/views/corier.php'";
    echo"</script>";
 } 
 

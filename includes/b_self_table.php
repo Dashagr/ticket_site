@@ -1,10 +1,10 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
+include '../client/table.html';
 
 session_start();
 $login = $_SESSION['login'];
 
-include 'table.php';
 $tbl = mysqli_query($connection, "SELECT * FROM `Buyer` WHERE `Buyer`.`login` = '$login' ");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";

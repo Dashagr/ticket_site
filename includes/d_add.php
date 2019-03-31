@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $del_street = $_POST['del_street'];
 $del_num_of_building = $_POST['del_num_of_building'];
@@ -42,7 +42,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Delivery add successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/delivery.php'";
+   echo "window.location = '../client/views/delivery.php'";
    echo"</script>";
 }else
 { 
@@ -50,7 +50,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/delivery.php'";
+   echo "window.location = '../client/views/delivery.php'";
    echo"</script>";
 } 
 ?>

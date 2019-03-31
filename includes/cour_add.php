@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $type = $_GET['var'];
 
@@ -50,7 +50,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Delivery add successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/empl.php'";
+   echo "window.location = '../client/views/empl.php'";
    echo"</script>";
 }else
 { 
@@ -58,7 +58,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/empl.php'";
+   echo "window.location = '../client/views/empl.php'";
    echo"</script>";
 }
 ?>

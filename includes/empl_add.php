@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $bank_details = $_GET['bank_details'];
 $name = $_GET['name'];
@@ -47,7 +47,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Employee add successfully')";
     echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/empl.php'";
+   echo "window.location = '../client/views/empl.php'";
    echo"</script>";
 }else
 { 
@@ -55,7 +55,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-  echo "window.location = '../empl/empl.php'";
+  echo "window.location = '../client/views/empl.php'";
    echo"</script>";
 }
 ?>

@@ -1,10 +1,9 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
+include '../client/table.html';
 
 session_start();
 $login = $_SESSION['login'];
-
-include 'table.php';
 
 $tbl = mysqli_query($connection, "SELECT * FROM ((`Delivery` INNER JOIN `Courier` ON `Delivery`.`bank_details_courier` = `Courier`.`bank_details_courier`) INNER JOIN `Orders` ON `Delivery`.`account_number` = `Orders`.`account_number`) INNER JOIN `Buyer` ON `Buyer`.`buyer_phone` = `Orders`.`buyer_phone` WHERE `Buyer`.`login` = '$login' ");
 

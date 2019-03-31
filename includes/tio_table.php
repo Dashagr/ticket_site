@@ -1,6 +1,7 @@
 <?php
-include 'db.php';
-include 'table.php';
+include 'helpers/db.php';
+include '../client/table.html';
+
 $tbl = mysqli_query($connection, "SELECT * FROM `Ticket_In_Order` INNER JOIN `Orders` ON `Orders`.`account_number`=`Ticket_In_Order`.`account_number` ORDER BY `Ticket_In_Order`.`account_number`");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";

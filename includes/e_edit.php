@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $event_code = $_GET['event_code'];
 $var = $_GET['var'];
@@ -49,7 +49,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Event # " . $event_code . "edited successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
 }else
 { 
@@ -57,7 +57,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Fail!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/event.php'";
+   echo "window.location = '../client/views/event.php'";
    echo"</script>";
 } 
 

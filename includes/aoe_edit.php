@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $aid = $_GET['a_id'];
 $eid = $_GET['e_id'];
@@ -19,7 +19,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Artist_On_Event # " . $aid . $eid . "edited successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 }else
 { 
@@ -27,7 +27,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 } 
 ?>

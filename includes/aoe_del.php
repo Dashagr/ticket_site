@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'helpers/db.php';
 
 $aid_del = $_GET['aid_del'];
 $eid_del = $_GET['eid_del'];
@@ -18,7 +18,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Artist_On_Event # " . $aid_del . " , " . $eid_del . " deleted successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 }else
 { 
@@ -26,7 +26,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../empl/aoe.php'";
+   echo "window.location = '../client/views/aoe.php'";
    echo"</script>";
 } 
 ?>
