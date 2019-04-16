@@ -1,6 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/info.css">
+</head>
+<body>
 <?php
 include 'header.html';
 ?>
+<style>
+	.header-one, .header-two,
+	.header-three, .header-four,
+	.header-five {
+		height: 100vh!important;
+		width: 100%;
+		min-height: 420px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.logo-article{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.header-thumb {
+	margin: 0!important;
+}
+</style>
 
 <!-- Header section
 ================================================== -->
@@ -49,8 +79,8 @@ include 'header.html';
         ?>
 
         <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.3s">
-          <h1>Impreza</h1>
-          <p>Квиткове агентство Impreza дає унікальну можливість організовувати своє дозвілля з мінімальною затратою сил і часу. Це не просто афіша заходів, які відбудуться в місті. Це ретельна підбірка того, що може зацікавити людину і допомогти їй.</p>
+          <h1 class="header-logo">Impreza</h1>
+          <p class="logo-article">Квиткове агентство Impreza дає унікальну можливість організовувати своє дозвілля з мінімальною затратою сил і часу. Це не просто афіша заходів, які відбудуться в місті. Це ретельна підбірка того, що може зацікавити людину і допомогти їй.</p>
        </div>
 
       </div>
@@ -61,3 +91,6 @@ include 'header.html';
     include 'footer.html';
     include 'script.html';
 ?>
+
+</body>
+</html>

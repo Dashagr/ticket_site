@@ -1,0 +1,199 @@
+/* ----- HEADER ------- */
+.navicon {
+    padding: 0;
+    top: -5px;
+}
+.brand {
+    padding: 8px 0 0 10px;
+}
+
+.brand .header-logo:hover{
+    color: rgba(224, 228, 231, 0.904)!important;
+    cursor: pointer;
+}
+
+.brand .header-logo{
+    color: rgb(49, 69, 83);
+    font-family: 'ZCOOL XiaoWei', serif;
+    transition: .5s;
+}
+
+.navbar{
+    height: 0;
+    width: 100%;
+    background: #4985859a;
+    background-size: cover;
+    border: none;
+    transition: .4s;
+    position: absolute;
+}
+
+
+.login-section{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background: url(../img/White-Background-9B1.jpg)no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* -------- main.php ------- */
+
+.main-menu{
+    background: rgba(199, 202, 204, 0.699);
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.main-menu .main-menu-item{
+    font-size: 15px;
+    color: rgb(46, 45, 45);
+    font-weight: 800;
+    font-family: 'ZCOOL XiaoWei', serif!important;
+    transition: 0!important;
+}
+
+.portfolio-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-chain:before, .fa-link:before {
+    content: "\f0c1";
+    position: relative;
+    top: 2px;
+}
+
+.fa-link:hover{
+    transition: 1s;
+    transform: rotate(360deg)!important;
+}
+
+.all-ivents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(37, 36, 36);
+    font-family: 'ZCOOL XiaoWei', serif!important;
+    font-weight: 800;
+    background: rgba(191, 202, 186, 0.774);
+}
+
+.table-ivents{
+    background: #000;
+}
+
+#portfolio {
+    padding-bottom: 14rem;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background: #3a484d73; */
+    background: #4d9797d5;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fadeInUp{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: rgb(162, 166, 167);
+    
+}
+
+
+.table{
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.table:hover{
+    -webkit-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.75);
+}
+
+.table-article{
+    margin-top: 10px;
+    background: #4985859a;
+    height: 30px;
+    border-top: none!important;
+    border-left: none!important;
+    border: 1px solid rgb(65, 62, 62);
+}
+
+.table-article:last-child{
+    border-right: none;
+}
+
+.table-article span{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+.table-row{
+    padding: 10px!important;
+    border: 1px solid rgb(65, 62, 62)!important;
+    border-left: none;
+    vertical-align: baseline!important;
+    background: rgba(194, 202, 199, 0.74);
+}
+
+.table-row:first-child{
+    background: rgba(70, 94, 116, 0.685);
+    color: white!important;
+    padding: 10px 20px;
+    border-bottom: none!important;
+}
+
+
+
+.table-row:first-child {
+    border-left: none!important;
+    border-bottom: none!important;
+}
+
+.table-row:hover{
+    background: rgba(70, 94, 116, 0.685)!important;
+    color: #fff;
+}
+
+.table-row:first-child:hover~ .table-row:nth-child(n){
+    background: rgba(70, 94, 116, 0.685)!important;
+    color: #fff;
+}
+
+.table-row:first-child:hover{
+    background: rgba(194, 202, 199, 0.74)!important;
+    color: rgb(31, 29, 29);
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+

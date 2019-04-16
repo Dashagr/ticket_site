@@ -1,5 +1,4 @@
 <?php
-include '../../client/views/header.php';
 include 'db.php';
 
 $phone = $_POST['phone'];
@@ -10,12 +9,12 @@ $email = $_POST['email'];
 $login = $_POST['login'];
 $password = $_POST['password'];
 
-if($login = "SELECT`login` FROM `Buyer`"){ 
+if($login = "SELECT `login` FROM `Buyer`"){ 
     echo "<script language='javascript'>";
    echo "alert('Такий логін уже є')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../sign.php'";
+   echo "window.location = '../../client/sign.php'";
    echo"</script>";
 }
 

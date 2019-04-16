@@ -6,7 +6,7 @@ session_start();
 $login = $_SESSION['login'];
 
 $tbl = mysqli_query($connection, "SELECT * FROM `Buyer` WHERE `Buyer`.`login` = '$login' ");
-$table = "<table border='1' cellpadding='5'  width=100%>";
+$table = "<table class=table-tempale cellpadding='5'  width=100% >";
 $table .= "<tr>";
       $table .= "<th></th>";
 while ($row = mysqli_fetch_assoc($tbl))
@@ -16,20 +16,20 @@ while ($row = mysqli_fetch_assoc($tbl))
         $row['status']="ordinary";
     }else{$row['status']="PRIME";}
     
-        $table .= "<th>Ваша інформація</th>";
+      $table .= "<th  class=table-article><span class=table-article>Ваша інформація</span></th>";
       $table .= "<tr>";
-    	  $table .= "<tr><td>Номер телефону</td>";
-      $table .= "<td>".$row['buyer_phone']."</td></tr>";
-          $table .= "<tr><td>Прізвище</td>";
-	  $table .= "<td>".$row['buyer_surname']."</td></tr>";
-          $table .= "<tr><td>Ім'я</td>";
-      $table .= "<td>".$row['buyer_name']."</td></tr>";
-          $table .= "<tr><td>По-батькові</td>";
-      $table .= "<td>".$row['buyer_sec_name']."</td></tr>";
-           $table .= "<tr><td>Пошта</td>";
-      $table .= "<td>".$row['buyer_email']."</td></tr>";
-           $table .= "<tr><td>Статус</td>";
-      $table .= "<td>".$row['status']."</td></tr>";
+      $table .= "<tr class=table-article><td>Номер телефону</td>";
+        $table .= "<td class=table-row>".$row['buyer_phone']."</td></tr>";
+      $table .= "<tr class=table-article><td>Прізвище</td>";
+	      $table .= "<td class=table-row>".$row['buyer_surname']."</td></tr>";
+      $table .= "<tr class=table-article><td>Ім'я</td>";
+        $table .= "<td class=table-row>".$row['buyer_name']."</td></tr>";
+      $table .= "<tr class=table-article><td>По-батькові</td>";
+        $table .= "<td class=table-row>".$row['buyer_sec_name']."</td></tr>";
+      $table .= "<tr class=table-article><td>Пошта</td>";
+        $table .= "<td class=table-row>".$row['buyer_email']."</td></tr>";
+      $table .= "<tr class=table-article><td>Статус</td>";
+        $table .= "<td class=table-row>".$row['status']."</td></tr>";
     }
       $table .= "</table> ";
       echo $table;

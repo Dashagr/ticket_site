@@ -1,25 +1,76 @@
 <style>
 
+.table-tempale {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid rgb(65, 62, 62)!important;
+}
+
+
 table {
-font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-font-size: 14px;
-border-collapse: collapse;
-text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
 }
-th, td:first-child {
-background: #B0C4DE;
-color: white;
-padding: 10px 20px;
+
+
+th {
+    background: #4985859a!important;
+    padding: 10px!important;
+    border-left: 1px solid rgb(65, 62, 62)!important;
+    vertical-align: baseline!important;
+    color: white;
 }
-th, td {
-border-style: solid;
-border-width: 0 1px 1px 0;
-border-color: white;
+
+td:first-child {
+    padding: 10px!important;
+    border: 1px solid rgb(65, 62, 62)!important;
+    border-left: none;
+    border-bottom: none;
+    vertical-align: baseline!important;
+    background: rgba(70, 94, 116, 0.685)!important;
+    color: white;
 }
+
+td:first-child:hover {
+    background: rgba(194, 202, 199, 0.74)!important;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+
+
 td {
-background: #F5F5DC;
+    padding: 10px!important;
+    border: 1px solid rgb(65, 62, 62)!important;
+    vertical-align: baseline!important;
+    background: rgba(194, 202, 199, 0.74)!important;
 }
+
+td:hover{
+    background: rgba(70, 94, 116, 0.685)!important;
+    color: #fff;
+}
+
+
+
 th:first-child, td:first-child {
 text-align: left;
 }
+
+td:last-child{
+    border-bottom: none!important;
+}
+
+.table-row:first-child {
+    border-left: none!important;
+    border-bottom: none!important;
+}
+
+
 </style>
+
+

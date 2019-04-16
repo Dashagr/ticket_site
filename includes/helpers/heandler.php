@@ -7,7 +7,6 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 $user = mysqli_fetch_assoc(mysqli_query($connection, "SELECT `login`,`password` FROM `Buyer` WHERE `login`='$login';"));
-//$admin = mysqli_fetch_assoc(mysqli_query($connection, "SELECT `login`,`password` FROM `Employee` WHERE `login` = 'admin'"));
 $empl = mysqli_fetch_assoc(mysqli_query($connection, "SELECT `login`,`password` FROM `Employee` WHERE `login`='$login';"));
 $cour = mysqli_fetch_assoc(mysqli_query($connection, "SELECT `login`,`password` FROM `Courier` WHERE `login`='$login';"));
 

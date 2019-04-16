@@ -2,23 +2,21 @@
 include 'header.html';
 ?>
 
-<!-- Portfolio section
+   <!-- Portfolio section
 ================================================== -->
-<section id="portfolio">
+<section id="portfolio" class="login-section">
    <div class="container">
       <div class="row">
 
          <div class="col-md-12 col-sm-12">
-            
                <!-- iso section -->
                <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
 
-                  <ul class="filter-wrapper clearfix">
-                           <li><a href="#" data-filter="*" class="selected opc-main-bg">Топ афіш</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".graphic">Найпопулярніші</a></li>
-                         <!--  <li><a href="#" class="opc-main-bg" data-filter=".template"></a></li> -->
-                           <li><a href="#" class="opc-main-bg" data-filter=".photoshop">Обмежена кількість квитків</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".branding">Cкоро</a></li>
+                  <ul class="filter-wrapper clearfix main-menu">
+                           <li><a href="#" data-filter="*" class="selected opc-main-bg main-menu-item">Топ афіш</a></li>
+                           <li><a href="#" class="opc-main-bg main-menu-item" data-filter=".graphic">Найпопулярніші</a></li>
+                           <li><a href="#" class="opc-main-bg main-menu-item" data-filter=".photoshop">Мало квитків</a></li>
+                        <li><a href="#" class="opc-main-bg main-menu-item" data-filter=".branding">Скоро</a></li>
                         </ul>
 
                         <!-- iso box section -->
@@ -101,7 +99,7 @@ include 'header.html';
                         </div>
 
                </div>
-             <h1><a name="ar"></a>Усі заходи</h1>
+             <h1 class="all-ivents"><a name="ar"></a>Усі заходи</h1>
 
 <?php
    include '../includes/helpers/main_table.php';

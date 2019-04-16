@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music Digest</title>
+</head>
+<body>
+  
 	<!-- Site title
    ================================================== -->
 	<title>Music Digest</title>
@@ -24,15 +27,19 @@
 
 	<!-- Main CSS
    ================================================== -->
+  <link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/info.css">
 
 	<!-- Google web font 
    ================================================== -->	
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 	
 </head>
 <body>
-
 
 <!-- Preloader section
 ================================================== -->
@@ -53,22 +60,22 @@
             <div class="row">
 
               <div class="brand">
-                <a href="main.php">Impreza</a>
+                <a href="main.php" class="header-logo">Impreza</a>
               </div>
 
               <div class="navicon">
                 <div class="menu-container">
 
                   <div class="circle dark inline">
-                    <i class="icon ion-navicon"></i>
+                    <i class="icon ion-navicon"id="menu-btn"></i>
                   </div>
 
-                  <div class="list-menu">
-                    <i class="icon ion-close-round close-iframe"></i>
+                  <div class="list-menu" id="menu">
+                    <i class="icon ion-close-round close-iframe" id="close"></i>
                     <div class="intro-inner">
                       <ul id="nav-menu">
-                        <li><a href="main.php">Головна</a></li>
-                        <li><a href="info.php"> Довідка</a></li>
+                        <li><a href="../main.php">Головна</a></li>
+                        <li><a href="blog.php"> Довідка</a></li>
                         <li><a href="about.php">Особистий кабінет</a></li>
                         <li><a href="contact.php">Контакти</a></li>
                       </ul>
@@ -84,3 +91,17 @@
 
    </nav>
 </div>
+
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('menu').style.visibility="visible";
+    document.getElementById('menu').style.opacity=1;
+  })
+
+  document.getElementById('close').addEventListener('click', () => {
+    document.getElementById('menu').style.visibility="hidden";
+    document.getElementById('menu').style.opacity=0;
+  })
+</script>
+</body>
+</html>

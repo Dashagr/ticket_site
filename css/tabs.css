@@ -23,9 +23,6 @@
     border-radius: 1px;
 }
 
-.nicescroll-cursors {
-	
-} 
 
 
 /*
@@ -57,6 +54,7 @@
 	overflow: hidden;
 	margin-bottom: 60px;
 }
+
 .VerticalTab.tabs_ver_6 .resp-tabs-list li {
 	margin: 10px 0px;
 	text-align: center;
@@ -73,6 +71,7 @@
 	color: #f78b26;
 	border: none!important;
 }
+
 .VerticalTab.tabs_ver_6 .resp-tabs-list li:hover {
 	color: #f78b26;
     -moz-transition: all 0.2s linear;

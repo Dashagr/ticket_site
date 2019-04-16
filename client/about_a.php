@@ -1,5 +1,5 @@
 <?php
-include 'header_a.html';
+include 'header.html';
 ?>
 
  <div class="list-menu">
@@ -31,8 +31,8 @@ include 'header_a.html';
 
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
             	<div class="header-thumb">
-              		 <h1 class="wow fadeIn" data-wow-delay="0.6s">Особистий кабінет</h1>
-              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s">Ласкаво просимо, співробітнику!</h3>
+              		 <h1 class="wow fadeIn reviue-article" data-wow-delay="0.6s">Особистий кабінет</h1>
+              		 <h3 class="wow fadeInUp reviue-article" data-wow-delay="0.9s">Ласкаво просимо!</h3>
            		</div>
 			</div>
 
@@ -40,68 +40,73 @@ include 'header_a.html';
 	</div>		
 </section>
 
+<div class="reviue-data about-data">
+	<h1 class="reviue-article check-data" >Перегляд даних ↓ </h1>
+	<div class="button-container">
+		<a href="views/event.php" class="btn btn-default btn-default-about">Усі заходи</a> 
+		<a href="views/artist.php" class="btn btn-default btn-default-about">Артисти</a>
+		<a href="views/aoe.php" class="btn btn-default btn-default-about">Артисти на заходах</a>
+		<a href="views/venue.php" class="btn btn-default btn-default-about">Концертні приміщення</a> 
+		<a href="views/ticket.php" class="btn btn-default btn-default-about">Інформація про квитки</a>
+		<a href="views/empl.php" class="btn btn-default btn-default-about">Співробітники</a> 
+		<a href="views/courier.php" class="btn btn-default btn-default-about">Кур'єри</a>
+	</div>
+	<img src="../images/about-img.jpg" class="img-responsive about-first-img" alt="About">
+			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
+</div>
+
+<div class="reviue-data about-data">
+	<h1 class="reviue-article check-data" >Перегляд даних ↓ </h1>
+	<div class="button-container">
+	<a href="views/tio.php" class="btn btn-default btn-default-about">Усі замовлення</a>
+	<a href="views/buyer.php" class="btn btn-default btn-default-about">Покупці</a>
+	<a href="views/delivery.php" class="btn btn-default btn-default-about">Доставки</a>
+	</div>
+	<img src="../images/request.png" class="img-responsive about-first-img" alt="About">
+			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
+</div>
 
 <!-- About section
 ================================================== -->
-<section id="about">
+<section id="about" class="about-client">
    <div class="container">
-      <div class="row">
-
-         <div class="wow fadeInUp col-md-4 col-sm-5" data-wow-delay="1.3s">
-         	<img src="../images/request.jpg" class="img-responsive" alt="About">
-             <br><a href="views/tio.php" class="btn btn-default">Усі замовлення</a><br>
-            <br><a href="views/buyer.php" class="btn btn-default">Покупці</a><br>
-             <br><a href="views/delivery.php" class="btn btn-default">Доставки</a></p>
-            
-         	<h1>КРАЩІ СПІВРОБІТНИКИ ТИЖНЯ</h1>
-			<p><b>Скрипнікова Галино Микитівно!</b> Вітаємо вас з почесним місцем на нашій дошці пошани! Так тримати! Продавайте більше квитків і радуйте нашу фірму прибутками. Та інші співробітники, також старайтесь перемогти Галину! Ваше ім'я тут - це честь для Вас, і щастя для нас! </p>
+      <div class="row">            
+         	<h1 class="reviue-article">КРАЩІ СПІВРОБІТНИКИ ТИЖНЯ</h1><br>
+			<p><span class="strong-article">Скрипнікова Галино Микитівно!</span> Вітаємо вас з почесним місцем на нашій дошці пошани! Так тримати! Продавайте більше квитків і радуйте нашу фірму прибутками. Та інші співробітники, також старайтесь перемогти Галину! Ваше ім'я тут - це честь для Вас, і щастя для нас! </p>
 		</div>
-
-		<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="1.6s">
-			<h1>Перегляд даних ↓ </h1>
-			<p><br><a href="views/event.php" class="btn btn-default">Усі заходи</a> <br>
-            <br><a href="views/artist.php" class="btn btn-default">Артисти</a><br>
-            <br><a href="views/aoe.php" class="btn btn-default">Артисти на заходах</a><br>
-            <br><a href="views/venue.php" class="btn btn-default">Концертні приміщення</a> <br>
-            <br><a href="views/ticket.php" class="btn btn-default">Інформація про квитки</a><br>
-            <br><a href="views/empl.php" class="btn btn-default">Співробітники</a> <br>
-            <br><a href="views/courier.php" class="btn btn-default">Кур'єри</a> <br><br>
-            
-			<img src="../images/about-img.jpg" class="img-responsive" alt="About">
-			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
-		</div>
-
-		<div class="clearfix"></div>
-
-		<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-			<h1>Оголошення 1</h1>
+<br>
+<div class="all-advertisement">
+<div class="wow fadeInUp col-md-4 col-sm-6 " data-wow-delay="0.4s">
+			<h1 class="alarm">Оголошення 1</h1>
 			<p>Увага! У вівторок 13-06-2017 в офісі не буде гарячої води, так як проводяться ремонтні роботи поблизу нас. У зв'язку з цим робочий день скорочено (до 17:00).</p>
 		</div>
 
 		<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
-			<h1>Оголошення 2</h1>
+		<h1 class="alarm">Оголошення 2</h1>
 			<p>Восьмого березня проводимо урочисте свято. Запрошуємо всіх працівників на корпоратив, приходьте і приносьте солодощі!</p>
 		</div>
 
 		<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1.2s">
-			<h1>Оголошення 3</h1>
+		<h1 class="alarm">Оголошення 3</h1>
 			<p>У п'ятницю 12-06-2017 відвідувачка залишила у нас свої навушники. Білі, Panasonic. Вони лежать у шафі в кабінеті у директора. Якщо звернеться, віддайте.</p>
 		</div>
 
 		<div class="clearfix"></div>
 
 		<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.4s">
-			<h1>Оголошення 4</h1>
+		<h1 class="alarm">Оголошення 4</h1>
 			<p>У нашої Галі народились кошенята, породи британці. % чудових тваринок. Заберіть їх додому. Вони хочуть тепла і доброти. </p>
 		</div>
 
 		<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.6s">
-			<h1>Оголошення 5</h1>
+		<h1 class="alarm">Оголошення 5</h1>
 			<p>У четвер 04-05-2017 о 15:00 буде проведено зібрання, де вирішимо питання з приводу ваших премій. Усім бути!</p>
 		</div>
 
       </div>
    </div>
+</div>
+
 </section>
 
 <?php
