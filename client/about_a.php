@@ -62,7 +62,7 @@ include 'header.html';
 	<a href="views/buyer.php" class="btn btn-default btn-default-about">Покупці</a>
 	<a href="views/delivery.php" class="btn btn-default btn-default-about">Доставки</a>
 	</div>
-	<img src="../images/request.png" class="img-responsive about-first-img" alt="About">
+	<!-- <img src="../images/request.png" class="img-responsive about-first-img" alt="About"> -->
 			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
 </div>
 

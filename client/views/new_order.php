@@ -1,6 +1,7 @@
 <?php
-include '../head.html';
-include '../../includes/helpers/db.php';
+  include 'head2.html';
+  include '../header.html';
+  include '../../includes/helpers/db.php';
 ?>
 
     <!-- Begin HorizontalTab style 6 -->
@@ -60,7 +61,7 @@ include '../../includes/helpers/db.php';
                             <b>Кількість квитків :</b><br>
 							<input type="text" name="quantity_of_tickets" value=""><br><br>
                             
-                            <b>Якщо хочете зарезервувати замовлення, натисніть "р",<br> якщо придбати - "в":<br></b>
+                            <b>Якщо хочете зарезервувати замовлення, натисніть "r",<br> якщо придбати - "d":<br></b>
                              <select name="order_status">
                                  <option selected disabled>Оберіть</option>
                                  <option>р</option>
@@ -94,10 +95,10 @@ include '../../includes/helpers/db.php';
                             }
     ?>   </select>
 						<br><br>
-							<b>В - сплачено</b><br>
-                            <b>Р - зарезервовано</b><br>
-                            <b>З - знято з резерву</b><br>
-							<b>Р - зарезервовано</b><br><br>
+							<b>d - сплачено</b><br>
+                            <b>r - зарезервовано</b><br>
+                            <b>c - знято з резерву</b><br>
+							
                            <b> Встановіть новий статус замовлення<br>
 							<br><br>
 							<b>Введіть нове значення:</b><br>
@@ -110,14 +111,12 @@ include '../../includes/helpers/db.php';
                   
                 </div>
                 
-               <div class="fc-tab-4">
-                
-                  <div class="home-container">
+               <div class="fc-tab-3"> 
+
+                   <div class="home-container">
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="left-content">
-                          <div class="left-line"></div>  
-                          <h2><em>Видалення</em> даних</h2>
+                      <div class="col-md-12">
+                          <h2>Видалення даних</h2>
                           <form method="GET" action="../../includes/tio_del.php" class="form">
 							<p>Оберіть замовлення, яке хочете видалити:</p><br>
 							<select name="account_number">
@@ -130,8 +129,6 @@ include '../../includes/helpers/db.php';
     ?>   </select><br><br>
 							<input type="submit" value="Видалити" class="primary-button">
 						</form>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   

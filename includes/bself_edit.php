@@ -39,7 +39,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Buyer # " . $login . " edited successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../client/views/b_self.php'";
+   header('Location: ' . $_SERVER['HTTP_REFERER']);
    echo"</script>";
 }else
 { 

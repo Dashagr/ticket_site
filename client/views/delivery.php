@@ -1,5 +1,6 @@
 <?php
-include '../head.html';
+include 'head2.html';
+include '../header.html';
 include '../../includes/helpers/db.php';
 ?>
     <!-- Begin HorizontalTab style 6 -->
