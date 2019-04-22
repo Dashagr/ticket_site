@@ -19,7 +19,6 @@ while ($row = mysqli_fetch_assoc($tbl))
      // $table .= "<td style='background_image: url(images/".$img."></td>";
       $table .= "<td class=table-row>".$row['artist_name']."</td>";
 	  $table .= "<td class=table-row>".$row['processing']."</td>";
-      $table .= "<td class=table-row>".$row['translation']."</td>";
       $table .= "<td class=table-row>".$row['album_title']."</td>";
     }
       $table .= "</table> ";
