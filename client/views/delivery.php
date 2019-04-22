@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
     <!-- Begin HorizontalTab style 6 -->
@@ -43,7 +43,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
 						<form method="POST" action="../../includes/d_add.php" class="form">
 							Вулиця:<br>
@@ -89,7 +89,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/d_edit.php" class="form">
@@ -103,12 +103,12 @@ include '../../includes/helpers/db.php';
                             }
     ?>   </select><br><br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							<input type="radio" name="var" value="del_street" checked> Вулиця<br>
-							<input type="radio" name="var" value="del_num_of_building"> № будинку<br>
-							<input type="radio" name="var" value="del_num_of_flat"> № квартири<br>
-							<input type="radio" name="var" value="desired_date"> Дата (рррр-мм-дд)<br>
-							<input type="radio" name="var" value="desired_time"> Час (гг:хх)<br>
-							<input type="radio" name="var" value="delivery_Status"> Статус<br><br>
+							<label class="label-input"><input type="radio" name="var" value="del_street" checked> Вулиця</label><br>
+							<label class="label-input"><input type="radio" name="var" value="del_num_of_building"> № будинку</label><br>
+							<label class="label-input"><input type="radio" name="var" value="del_num_of_flat"> № квартири</label><br>
+							<label class="label-input"><input type="radio" name="var" value="desired_date"> Дата (рррр-мм-дд)</label><br>
+							<label class="label-input"><input type="radio" name="var" value="desired_time"> Час (гг:хх)</label><br>
+							<label class="label-input"><input type="radio" name="var" value="delivery_Status"> Статус</label><br><br>
 							Кур'єр:<br>
                             <select name="bank_details_courier">
                                  <option selected disabled>Оберіть</option>

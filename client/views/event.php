@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -44,7 +44,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
 						<form method="POST" action="../../includes/e_add.php" class="form">
 							Назва заходу:<br>
@@ -99,7 +99,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/e_edit.php" class="form">
@@ -114,15 +114,15 @@ include '../../includes/helpers/db.php';
     ?>
    </select></p>   
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-                            <input type="radio" name="var" value="event_code" checked> Код заходу<br>
-							<input type="radio" name="var" value="event_name" checked> Назва заходу<br>
-							<input type="radio" name="var" value="category"> Категорія<br>
-							<input type="radio" name="var" value="genre"> Жанр<br>
-							<input type="radio" name="var" value="data"> Дата (рррр-мм-дд)<br>
-							<input type="radio" name="var" value="time"> Час (гг:хх)<br>
-							<input type="radio" name="var" value="current_num_tickets"> Поточна кількість квитків<br>
-							<input type="radio" name="var" value="summary_num_tickets">  Куплені квитки (кількість)<br>
-							<input type="radio" name="var" value="min_price"> Ціна<br>  
+                            <input type="radio" name="var" value="event_code" checked> Код заходу</form><br>
+							<label class="label-input"><input type="radio" name="var" value="event_name" checked> Назва заходу</label><br>
+							<label class="label-input"><input type="radio" name="var" value="category"> Категорія</label><br>
+							<label class="label-input"><input type="radio" name="var" value="genre"> Жанр</label><br>
+							<label class="label-input"><input type="radio" name="var" value="data"> Дата (рррр-мм-дд)</label><br>
+							<label class="label-input"><input type="radio" name="var" value="time"> Час (гг:хх)</label><br>
+							<label class="label-input"><input type="radio" name="var" value="current_num_tickets"> Поточна кількість квитків</label><br>
+							<label class="label-input"><input type="radio" name="var" value="summary_num_tickets">  Куплені квитки (кількість)</label><br>
+							<label class="label-input"><input type="radio" name="var" value="min_price"> Ціна</label><br>  
                             <b>Місце проведення:</b><br>
                             якщо серед списку немає, додайте у відповідній таблиці
                            <p><select name="institution">
@@ -189,5 +189,5 @@ include '../../includes/helpers/db.php';
     <!-- End HorizontalTab style 6 -->
     
 <?php
-    include 'foot.html';
+    include '../foot.html';
 ?>

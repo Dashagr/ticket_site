@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -33,7 +33,7 @@ include '../../includes/helpers/db.php';
                   <div class="home-container">
                     <div class="row">
                       <div class="col-md-6">
-                          <iframe src="../../includes/empl_table.php" width="870" height="689"></iframe>
+                          <iframe src="../../includes/empl_table.php" width="870" height="589"></iframe>
                       </div>
                     </div>
                   </div>
@@ -44,7 +44,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
                           <form method="GET" action="../../includes/cour_add.php" class="form">
                          
@@ -84,7 +84,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/b_edit.php" class="form">
@@ -100,28 +100,28 @@ include '../../includes/helpers/db.php';
     ?>   </select></p>   
 						<br><br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							 <form method="GET" action="../../includes/cour_add.php" class="form">
+							 <form method="GET" action="../../includes/cour_edit.php" class="form">
                          
-                              Банківські реквізити<br>
-                            <input type="text" name="bank_details" value=""><br> 
-                              Прізвище<br>
-							<input type="text" name="surname" value=""> <br>
-                               Ім'я<br>
-							<input type="text" name="name" value=""><br>
-                              По-батькові<br>
-                            <input type="text" name="sec_name" value=""><br> 
-                              Пошта<br>
-                            <input type="text" name="email" value=""><br>
-                              Місто<br>
-                            <input type="text" name="city" value=""><br>
-                              Вулиця<br>
-                            <input type="text" name="street" value=""><br>
-                              Номер будинку<br>
-                            <input type="text" name="house_num" value=""><br>
-                              Номер квартири<br>
-                            <input type="text" name="num_of_flat" value=""><br>
-                              День народження<br>
-                            <input type="text" name="courier_bday" value=""><br><br>
+                              
+              <label class="label-input"><input type="radio" name="bank_details" value="">Банківські реквізити</label><br> 
+                             
+							<label class="label-input"><input type="radio" name="surname" value=""> Прізвище </label><br>
+                             
+							<label class="label-input"><input type="radio" name="name" value="">  Ім'я</label><br>
+                             
+              <label class="label-input"><input type="radio" name="sec_name" value=""> По-батькові</label><br> 
+                            
+              <label class="label-input"><input type="radio" name="email" value="">  Пошта</label><br>
+                             
+              <label class="label-input"><input type="radio" name="city" value=""> Місто</label><br>
+                              
+              <label class="label-input"><input type="radio" name="street" value="">Вулиця</label><br>
+                             
+              <label class="label-input"><input type="radio" name="house_num" value=""> Номер будинку</label><br>
+                              
+              <label class="label-input"><input type="radio" name="num_of_flat" value="">Номер квартири</label><br>
+                              
+             <label class="label-input"><input type="radio" name="courier_bday" value="">День народження</label><br><br>
                           <input type="submit" value="Додати" class="primary-button">
                           </form>  
                             <br><br>

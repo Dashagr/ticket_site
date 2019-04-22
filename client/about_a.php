@@ -50,20 +50,12 @@ include 'header.html';
 		<a href="views/ticket.php" class="btn btn-default btn-default-about">Інформація про квитки</a>
 		<a href="views/empl.php" class="btn btn-default btn-default-about">Співробітники</a> 
 		<a href="views/courier.php" class="btn btn-default btn-default-about">Кур'єри</a>
-	</div>
-	<img src="../images/about-img.jpg" class="img-responsive about-first-img" alt="About">
-			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
-</div>
-
-<div class="reviue-data about-data">
-	<h1 class="reviue-article check-data" >Перегляд даних ↓ </h1>
-	<div class="button-container">
-	<a href="views/tio.php" class="btn btn-default btn-default-about">Усі замовлення</a>
+		<a href="views/tio.php" class="btn btn-default btn-default-about">Усі замовлення</a>
 	<a href="views/buyer.php" class="btn btn-default btn-default-about">Покупці</a>
 	<a href="views/delivery.php" class="btn btn-default btn-default-about">Доставки</a>
 	</div>
-	<!-- <img src="../images/request.png" class="img-responsive about-first-img" alt="About"> -->
-			<p>Не все одразу дається, а потроху та помалу, то зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </p>
+	<img src="../img/logo.png" class="img-responsive about-first-img" alt="About">
+			<p><b>Не все одразу дається, а потроху та помалу зробиш користі чимало.<br>Краще на п’ять хвилин раніше, ніж на хвилину пізніше.<br> Гарного робочого дня! </b></p>
 </div>
 
 <!-- About section

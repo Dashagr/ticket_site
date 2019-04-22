@@ -75,7 +75,7 @@ VALUES
 );";
        
     echo "<script language='javascript'>";
-        echo "alert('Order added successfully')";
+        // echo "alert('Order added successfully')";
         echo"</script>";
     if (mysqli_query($connection, $query2)) {
         
@@ -89,15 +89,15 @@ VALUES
         $query3 = "UPDATE `Event` SET `current_num_tickets` = '$new_num' WHERE `event_code` = '$event_code' ";
         
 		echo "<script language='javascript'>";
-        echo "alert('TIO added successfully')";
+        // echo "alert('Successfully')";
         echo"</script>";
        
         if (mysqli_query($connection, $query3)) {
             echo "<script language='javascript'>";
-        echo "alert('ok!')";
+        echo "alert('Successfully!')";
         echo"</script>";
          echo "<script  type='text/javascript'>";
-        echo "window.location = '../client/views/report_courier.php'";
+           header('Location: ' . $_SERVER['HTTP_REFERER']);
         echo"</script>";
         }
 	}else{ 
@@ -105,7 +105,7 @@ VALUES
         echo "alert('TIO didn`t added successfully!')";
         echo " </script>";
         echo "<script  type='text/javascript'>";
-        echo "window.location = '../client/views/report_courier.php'";
+           header('Location: ' . $_SERVER['HTTP_REFERER']);
         echo"</script>";
 	}
 }else
@@ -114,7 +114,7 @@ VALUES
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../client/views/new_order.php'";
+   header('Location: ' . $_SERVER['HTTP_REFERER']);
    echo"</script>";
 } 
 ?>

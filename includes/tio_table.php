@@ -5,7 +5,6 @@ include '../client/table.html';
 $tbl = mysqli_query($connection, "SELECT * FROM `Ticket_In_Order` INNER JOIN `Orders` ON `Orders`.`account_number`=`Ticket_In_Order`.`account_number` ORDER BY `Ticket_In_Order`.`account_number`");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";
-      $table .= "<th></th>";
 	  $table .= "<th>Код квитка</th>";
       $table .= "<th>Кількість квитків</th>";
 	  $table .= "<th>Код замовлення</th>";
@@ -21,7 +20,6 @@ while ($row = mysqli_fetch_assoc($tbl))
         $row['discount'] = "";
     }
       $table .= "<tr>";
-      $table .= "<td></td>";
       $table .= "<td>".$row['ticket_code']."</td>";
 	  $table .= "<td>".$row['quantity_of_tickets']."</td>";
       $table .= "<td>".$row['account_number']."</td>";

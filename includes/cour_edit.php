@@ -42,7 +42,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Courier # " . $id . "edited successfully')";
    echo"</script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../client/views/corier.php'";
+   echo "window.location = '../client/views/courier.php'";
    echo"</script>";
 }else
 { 
@@ -50,7 +50,7 @@ if (mysqli_query($connection, $query)) {
    echo "alert('Щось не так!')";
    echo " </script>";
    echo "<script  type='text/javascript'>";
-   echo "window.location = '../client/views/corier.php'";
+   echo "window.location = '../client/views/courier.php'";
    echo"</script>";
 } 
 

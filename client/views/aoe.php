@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -33,7 +33,7 @@ include '../../includes/helpers/db.php';
                   <div class="home-container">
                     <div class="row">
                       <div class="col-md-6">
-                          <iframe src="../../includes/aoe_table.php" width="870" height="689"></iframe>
+                          <iframe src="../../includes/aoe_table.php" width="870" height="489"></iframe>
                       </div>
                     </div>
                   </div>
@@ -44,7 +44,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
 						<form method="POST" action="../../includes/aoe_add.php" class="form">
 							<b>Оберіть артиста:</b><br>
@@ -73,7 +73,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/aoe_edit.php" class="form">
@@ -92,8 +92,8 @@ include '../../includes/helpers/db.php';
 							<input type="number" name="e_id" value=""><br><br>
                             <br> <br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							<input type="radio" name="var" value="artist_name" checked>Артист<br>
-							<input type="radio" name="var" value="event_code"> Код заходу<br>
+							<label class="label-input"><input type="radio" name="var" value="artist_name" checked>Артист</label><br>
+							<label class="label-input"><input type="radio" name="var" value="event_code"> Код заходу</label><br>
 							<br><br>
 							<b>Введіть нове значення:</b><br>
 							<input type="text" name="new_val" value=""><br><br>

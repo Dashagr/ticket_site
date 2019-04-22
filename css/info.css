@@ -34,8 +34,8 @@
 
 .about-first-img{
     width: 60%;
-    min-width: 650px;
-    height: 450px;
+    max-width: 600px;
+    height: 230px;
     border-radius: 10px;
     transition: 1s;
 }
@@ -45,15 +45,16 @@
 }
 
 .check-data{
-    margin: 50px 0;
+    margin: 150px 0;
 }
 
 .button-container{
     width: 100%;
+    max-height: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 0 50px 0;
+    margin: -150px 0 50px 0;
 }
 
 .btn-default-about {
@@ -95,7 +96,7 @@
 }
 
 .alarm{
-    color: rgb(177, 85, 85);
+    color: #297288;
 }
 
 .strong-article{

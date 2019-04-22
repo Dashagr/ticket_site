@@ -9,7 +9,6 @@ $tbl = mysqli_query($connection, "SELECT * FROM ((((`Event` INNER JOIN `Ticket` 
 
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";
-      $table .= "<th></th>";
       $table .= "<th>Назва заходу</th>";
 	  $table .= "<th>Код квитка</th>";
       $table .= "<th>Кількість квитків</th>";
@@ -25,7 +24,6 @@ $table .= "<tr>";
 while ($row = mysqli_fetch_assoc($tbl))
     {
       $table .= "<tr>";
-      $table .= "<td></td>";
       $table .= "<td>".$row['event_name']."</td>";
       $table .= "<td>".$row['ticket_code']."</td>";
 	  $table .= "<td>".$row['quantity_of_tickets']."</td>";

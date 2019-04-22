@@ -5,7 +5,6 @@ include '../client/table.html';
 $tbl = mysqli_query($connection, "SELECT * FROM `Delivery` INNER JOIN `Courier` ON `Delivery`.`bank_details_courier` = `Courier`.`bank_details_courier` ORDER BY `delivery_Status`, `delivery_code` ");
 $table = "<table border='1' cellpadding='5'  width=100%>";
 $table .= "<tr>";
-      $table .= "<th></th>";
 	  $table .= "<th>Код</th>";
       $table .= "<th>Вулиця</th>";
 	  $table .= "<th>№ будинку</th>";
@@ -19,7 +18,6 @@ $table .= "<tr>";
 while ($row = mysqli_fetch_assoc($tbl))
     {
       $table .= "<tr>";
-      $table .= "<td></td>";
       $table .= "<td>".$row['delivery_code']."</td>";
 	  $table .= "<td>".$row['del_street']."</td>";
       $table .= "<td>".$row['del_num_of_building']."</td>";

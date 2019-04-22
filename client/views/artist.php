@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -33,7 +33,7 @@ include '../../includes/helpers/db.php';
                   <div class="home-container">
                     <div class="row">
                       <div class="col-md-6">
-                          <iframe src="../../includes/artist_table.php" width="870" height="289"></iframe>
+                          <iframe src="../../includes/artist_table.php" width="870" height="489"></iframe>
                       </div>
                     </div>
                   </div>
@@ -44,7 +44,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
 						<form method="POST" action="../../includes/a_add.php" class="form">
 							Артист:<br>
@@ -68,7 +68,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/a_edit.php" class="form">
@@ -85,10 +85,10 @@ include '../../includes/helpers/db.php';
    </select></p>   
 						<br><br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							<input type="radio" name="var" value="artist_name" checked> Назва артиста<br>
-							<input type="radio" name="var" value="processing"> Обробка пісень<br>
-							<input type="radio" name="var" value="translation"> Переклад<br>
-							<input type="radio" name="var" value="album_title"> Назва альбому(туру)<br>
+							<label class="label-input"><input type="radio" name="var" value="artist_name" checked> Назва артиста</label><br>
+							<label class="label-input"><input type="radio" name="var" value="processing"> Обробка пісень</label><br>
+							<label class="label-input"><input type="radio" name="var" value="translation"> Переклад</label><br>
+							<label class="label-input"><input type="radio" name="var" value="album_title"> Назва альбому(туру)</label><br>
 							<br><br>
 							<b>Введіть нове значення:</b><br>
 							<input type="text" name="new_val" value=""><br><br>

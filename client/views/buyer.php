@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -33,7 +33,7 @@ include '../../includes/helpers/db.php';
                   <div class="home-container">
                     <div class="row">
                       <div class="col-md-6">
-                          <iframe src="../../includes/buyer_table.php" width="870" height="689"></iframe>
+                          <iframe src="../../includes/buyer_table.php" width="870" height="489"></iframe>
                       </div>
                     </div>
                   </div>
@@ -44,7 +44,7 @@ include '../../includes/helpers/db.php';
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нову <em>інформацію</em></h2><br>
 						<p>Ви не можете додати дані звідси!</p>
                         <p>Зареєструйте користувача тут  ↓ </p>
@@ -59,7 +59,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/b_edit.php" class="form">
@@ -74,12 +74,12 @@ include '../../includes/helpers/db.php';
     ?>   </select></p>   
 						<br><br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							<input type="radio" name="var" value="buyer_phone" checked> Телефон<br>
-							<input type="radio" name="var" value="buyer_surname"> Прізвище<br>
-							<input type="radio" name="var" value="buyer_name"> Ім'я<br>
-                            <input type="radio" name="var" value="buyer_sec_name"> По-батькові<br>
-                            <input type="radio" name="var" value="buyer_email">Пошта<br>
-                            <input type="radio" name="var" value="status"> Статус (1/0)<br>
+							<label class="label-input"><input type="radio" name="var" value="buyer_phone" checked> Телефон</label><br>
+							<label class="label-input"><input type="radio" name="var" value="buyer_surname"> Прізвище</label><br>
+							<label class="label-input"><input type="radio" name="var" value="buyer_name"> Ім'я</label><br>
+              <label class="label-input"><input type="radio" name="var" value="buyer_sec_name"> По-батькові</label><br>
+              <label class="label-input"><input type="radio" name="var" value="buyer_email">Пошта</label><br>
+              <label class="label-input"><input type="radio" name="var" value="status"> Статус (1/0)</label><br>
                             <br><br>
 							<b>Введіть нове значення:</b><br>
 							<input type="text" name="new_val" value=""><br><br>

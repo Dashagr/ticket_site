@@ -1,7 +1,7 @@
 <?php
-  include 'head2.html';
-  include '../header.html';
-  include '../../includes/helpers/db.php';
+include 'head2.html';
+include '../head.html';
+include '../../includes/helpers/db.php';
 ?>
 
     <!-- Begin HorizontalTab style 6 -->
@@ -34,7 +34,7 @@
                     <div class="row">
                       <div class="col-md-6">
                           <h3 style="text-align:center">Вільні квитки</h3>
-                          <iframe frameborder="0" src="../../includes/ticket_table.php" width="870" height="289"></iframe>
+                          <iframe frameborder="0" src="../../includes/ticket_table.php" width="870" height="489"></iframe>
                       </div>
                     </div>
                   </div>
@@ -45,7 +45,7 @@
                 
                   <div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2>Додати нове <em>замовлення</em></h2><br>
 						<form method="POST" action="../../includes/tio_add.php" class="form">
 							
@@ -64,8 +64,8 @@
                             <b>Якщо хочете зарезервувати замовлення, натисніть "r",<br> якщо придбати - "d":<br></b>
                              <select name="order_status">
                                  <option selected disabled>Оберіть</option>
-                                 <option>р</option>
-                                 <option>в</option>
+                                 <option>d</option>
+                                 <option>r</option>
                              </select><br><br>
                         
 							
@@ -81,7 +81,7 @@
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
 						<form method="GET" action="../../includes/tio_edit.php" class="form">
@@ -115,8 +115,10 @@
 
                    <div class="home-container">
                     <div class="row">
-                      <div class="col-md-12">
-                          <h2>Видалення даних</h2>
+                      <div class="col-md-6">
+                        <div class="left-content">
+                          <div class="left-line"></div>  
+                          <h2><em>Видалення</em> даних</h2>
                           <form method="GET" action="../../includes/tio_del.php" class="form">
 							<p>Оберіть замовлення, яке хочете видалити:</p><br>
 							<select name="account_number">
@@ -130,7 +132,9 @@
 							<input type="submit" value="Видалити" class="primary-button">
 						</form>
                     </div>
-                  </div>
+                  </div> 
+                </div>
+              </div>
                   
                 </div>
                 

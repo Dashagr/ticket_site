@@ -1,6 +1,6 @@
 <?php
   include 'head2.html';
-  include '../header.html';
+  include '../head.html';
   include '../../includes/helpers/db.php';
 ?>
 

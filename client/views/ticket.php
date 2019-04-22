@@ -1,6 +1,6 @@
 <?php
 include 'head2.html';
-include '../header.html';
+include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
 
@@ -33,7 +33,7 @@ include '../../includes/helpers/db.php';
                   <div class="home-container">
                     <div class="row">
                       <div class="col-md-6">
-                          <iframe src="../../includes/ticket_table.php" width="870" height="289"></iframe>
+                          <iframe src="../../includes/ticket_table.php" width="870" height="489"></iframe>
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ include '../../includes/helpers/db.php';
 				
 			<div class="about-container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12"style="height:550px;overflow-y: scroll;">
                         <h2><em>Редагувати</em> дані</h2>
                         <div class="under-line"></div>
                           <form method="GET" action="../../includes/t_edit.php" class="form">
@@ -92,10 +92,10 @@ include '../../includes/helpers/db.php';
     ?>
    </select><br><br>
 							<b>Оберіть поле, яке хочете змінити:</b><br>
-							<input type="radio" name="var" value="price" checked> Ціна<br>
-							<input type="radio" name="var" value="zona">Зона<br>
-							<input type="radio" name="var" value="row"> Ряд<br>
-							<input type="radio" name="var" value="place"> Місце<br>
+							<label class="label-input"><input type="radio" name="var" value="price" checked> Ціна</label><br>
+							<label class="label-input"><input type="radio" name="var" value="zona">Зона</label><br>
+							<label class="label-input"><input type="radio" name="var" value="row"> Ряд</label><br>
+							<label class="label-input"><input type="radio" name="var" value="place"> Місце</label><br>
                               <b>Код заходу</b><br>
                            <select name="event_code">
                         <option selected disabled>Оберіть</option>
