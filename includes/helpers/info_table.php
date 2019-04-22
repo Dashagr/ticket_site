@@ -9,8 +9,7 @@ $table = "<table class=table cellpadding='5'  width=100% >";
 $table .= "<tr>";
 
 $table .= "<th class=table-article><span class=table-article>Назва</span></th>";
-$table .= "<th class=table-article><span class=table-article>Обробка (якщо є)</span></th>";
-$table .= "<th class=table-article><span class=table-article>Переклад (якщо є)</span></th>";
+$table .= "<th class=table-article><span class=table-article>Sound producer</span></th>";
 $table .= "<th class=table-article><span class=table-article>Назва альбому</span></th>";
 while ($row = mysqli_fetch_assoc($tbl))
     {
