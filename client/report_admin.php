@@ -57,13 +57,13 @@ include 'header_a.html';
              <br>Імена артистів, які беруть участь у всіх заходах
                 <br><a href="../includes/req/req4.php" class="btn btn-default">Подивитись</a> <br>
              <br>Заходи, на які було здійснено замовлення на суму, більшу, ніж n гривень.
-                <form method="GET" action="../includes/req/req5.php" class="form">
+                <form method="GET" action="../includes/req/req5.php" class="form" style="text-align: center;">
     <b>Введіть суму:</b><br>
 							<input type="text" name="new_val" value=""><br><br>
 							<input type="submit" value="Подивитись" class="btn btn-default">
                           </form>              
         <p>     <br>Артист та назви заходів, на яких вони виступали, у  заданому жанрі.<br>
-              <form method="GET" action="../includes/req/req6.php" class="form">
+              <form method="GET" action="../includes/req/req6.php" class="form" style="text-align: center;">
     <b>Вказати жанр:</b><br>
 							<input type="text" name="new_val" value=""><br><br>
 							<input type="submit" value="Подивитись" class="btn btn-default"> <br>

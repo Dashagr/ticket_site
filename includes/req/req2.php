@@ -30,5 +30,5 @@ while ($row = mysqli_fetch_assoc($tbl))
       echo $table;
 ?>
 
-  <br><button><a href="../../client/about_a.php" >Назад</a></button><br>
+  <br><button class="primary-button"><a href="../../client/about_a.php" >Назад</a></button><br>
 

@@ -3,7 +3,10 @@ include 'head2.html';
 include '../head.html';
 include '../../includes/helpers/db.php';
 ?>
-
+<style type="text/css">input {
+    width: 150px;
+    margin: 20px auto; }</style>
+    
     <!-- Begin HorizontalTab style 6 -->
     <section class="section-full image-bg">
 
@@ -49,27 +52,27 @@ include '../../includes/helpers/db.php';
                         <h2>Додати нове <em>замовлення</em></h2><br>
 						<form method="POST" action="../../includes/tio_add.php" class="form">
 							
-                            <b>Код квитка:</b><br>
-                            <select name="ticket_code">
+                            <b>Оберіть захід:</b>
+                            <select name="ticket_code" class="custom">
                                  <option selected disabled>Оберіть</option>
-							<?php $tbl = mysqli_query($connection, "SELECT * FROM `ticket`"); 
+							<?php $tbl = mysqli_query($connection, "SELECT * FROM `Ticket` INNER JOIN `Event` ON `Ticket`.`event_code` = `Event`.`event_code` ORDER BY `event_name`"); 
                             while ($row = mysqli_fetch_assoc($tbl)) 
                             { 
-                                echo "<option value='".$row['ticket_code']."'>".$row['ticket_code']."</option><br>"; 
+                                echo "<option value='".$row['ticket_code']."'>".$row['event_name']." - ".$row['ticket_code']."</option><br>"; 
                             }
-    ?>   </select><br><br>
-                            <b>Кількість квитків :</b><br>
+    ?>   </select><br>
+                            <b>Кількість квитків :</b>
 							<input type="text" name="quantity_of_tickets" value=""><br><br>
                             
                             <b>Якщо хочете зарезервувати замовлення, натисніть "r",<br> якщо придбати - "d":<br></b>
-                             <select name="order_status">
+                             <select name="order_status" class="custom">
                                  <option selected disabled>Оберіть</option>
                                  <option>d</option>
                                  <option>r</option>
-                             </select><br><br>
+                             </select><br>
                         
 							
-							<input type="submit" value="Додати" class="primary-button"><br>
+							<input type="submit" class="submit" value="Додати" class="primary-button"><br>
 						</form>
                       </div>
                     </div>
