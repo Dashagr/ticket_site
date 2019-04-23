@@ -2,7 +2,7 @@
 include 'db.php';
 include '../client/table.html';
 
-$tbl = mysqli_query($connection, "SELECT * FROM `Event` Order by `data`");
+$tbl = mysqli_query($connection, "SELECT * FROM `Event` Order by `data` DESC");
 $table = "<table class=table cellpadding='5'  width=100% >";
 $table .= "<tr>";
       // $table .= "<th></th>";
